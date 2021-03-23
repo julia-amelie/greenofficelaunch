@@ -8,7 +8,7 @@ body{
 }
 
 .hero-image {
-  background-image: url("/Users/julia/Downloads/DJANGO_COURSE_1.xx/Capstone_Project_One/pexels-scott-webb-1048035.jpg");
+  background-image: url("/greenofficelaunch/pexels-scott-webb-1048035.jpg");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -30,7 +30,7 @@ h2 {
 }
 
 .jumbotron {
-  background-image: url("/Users/julia/Downloads/DJANGO_COURSE_1.xx/Capstone_Project_One/pexels-scott-webb-1048035.jpg");
+  background-image: url("/greenofficelaunch/pexels-scott-webb-1048035.jpg");
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
