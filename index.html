@@ -11,64 +11,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Brygada+1918&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Landing</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>knowledge Hub Launch</title>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
   </head>
   <body>
-  <div class="jumbotron">
+
+  <div class="hero-image">
+
+        <div class="w3-container">
+          <h2 class="w3-center w3-animate-bottom">Sign up now to get notified! </h2>
+        </div>
+
+        <form class="emailfrom" action="submit.php" method="post">
+
+          <label for="first"> </label><br>
+          <input id= "first" type="text" name="First_Name" value="" placeholder="First Name"> <br>
+
+          <label for="last"> </label><br>
+          <input id="last" type="text" name="Last_Name" value="" placeholder="Last Name"> <br>
+
+          <label for="mail"> </label><br>
+          <input id="email" type="email" name="Your_Email" value="" placeholder="Email"> <br>
+
+          <button onclick="window.location.href = 'thankyou.html';" type="submit" id="sub" class="btn btn-primary"> Submit </button>
+
+          <div class="">
+            <img src="https://www.jongeklimaatbeweging.nl/wp-content/uploads/2020/04/UvA-Green-Office.png" alt="UvA Green Office" width="200" height="200"> <br><br>
+          </div>
+
+        </form>
+
+        <div class="container">
+
+          <div class="w3-container">
+            <h1 class="w3-center w3-animate-bottom"><strong>The UvA Green Office Knowledge Hub</strong></h1>
+            <h1 class="w3-center w3-animate-bottom"><strong>will launch soon!</strong></h1>
+            <h3 class="w3-center w3-animate-bottom">Connect // Create // Collaborate</h3>
+          </div>
 
 
-    <h2>Sign up to get notified about the launch!</h2>
+          <h4><em>The first interactive community for interdisciplinary collaboration at the UvA.</em></h4> <br>
 
-    <form class="emailfrom" action="thankyou.html" method="get">
+          <p>Over the last year, the Green Office has had countless conversations with students and staff about how to improve sustainability at the university. Throughout these discussions, a clear theme began to emerge; there was a lack of communication and support between different departments, meaning that members of the UvA community didn’t know what was going on in their own university. Following this lead, we conducted in-depth community research about how best to tackle this challenge, and found that the overwhelming majority of participants wanted better university-wide networking with regards to sustainability. You asked, and we delivered! On 22nd April 2021, the UvA Green office is launching the first online community for everyone interested in interdisciplinary sustainability projects -  The Green Office Knowledge Hub! </p> <br>
+          <p>Collaboration is crucial to tackle the crisis of our generation, and the Knowledge Hub strives to facilitate interdisciplinary collaboration in sustainability research. It offers a unique opportunity for all students and staff, regardless of their background, to contribute their insights and skills to solving some of the toughest challenges that come with making our world more sustainable.</p> <br>
+          <p>Do you want to share the insights from your Bachelor or Master thesis on a sustainable topic? Are you looking for research assistants to support a sustainability research project you are planning? Are you looking for an extracurricular activity with a purpose? Or are you simply on the hunt for the latest inspirational findings in the field of sustainability from the UvA? Log on to the Green Office Knowledge hub and connect to the network of sustainability students, researchers, practitioners and enthusiasts at the UvA.</p> <br>
+          <p>The members of the Green Office Knowledge Hub team agree: <br> <strong><em>”We are really excited to launch the Knowledge Hub and are looking forward to seeing the collaborations that will come as a result of this project!”</em> </strong></p> <br>
+          <p>Connecting to the Knowledge Hub is as easy as can be! You can set up your user profile in less than 8 steps using your email address. Once you are set, there is a feed of the latest blog posts to explore. You can also filter the posts by the Sustainable Development Goals, meaning you can connect based on interest, rather than discipline. Support your favorite projects with a like, leave a comment, or directly get in touch with the creator of a post and expand your network. The Knowledge Hub will also help you to find collaborators on a research project, simply by posting a call for an open position. Not sure of whether your post fits the bill? Just check out the community guidelines for more information!</p>
+          <p>Need a kick-start on how to use the Knowledge Hub? In the run-up to April 22nd, the Green Office YouTube channel will produce a series of short video tutorials to navigate the most important features to help you get started. Stay tuned with the Green Office via our social channels to make sure you don’t miss out on the special Hub promotions!</p>
+          <h3><strong>Get ready to create, connect, collaborate!</strong></h3> <br>
 
-      <label for="first">First Name:</label><br>
-      <input type="text" name="First_Name" value="" placeholder="First Name"> <br>
+            <p> For more information about the Knowledge Hub, please contact Milly at</p><br>
+            <p>greenoffice.research-bb@uva.nl</p>
 
-      <label for="last">Last Name:</label><br>
-      <input type="text" name="Last_Name" value="" placeholder="Last Name"> <br>
-
-      <label for="mail">Your Email:</label><br>
-      <input type="email" name="Your_Email" value="" placeholder="Email"> <br>
-
-      <button type="submit" id="sub" class="btn btn-primary">Submit</button>
-
-    </form>
-
-    <img src="https://www.jongeklimaatbeweging.nl/wp-content/uploads/2020/04/UvA-Green-Office.png" alt="UvA Green Office" width="200" height="200">
-
-    <script>
-    var $form = $('form#test-form'),
-        url = 'https://script.google.com/macros/s/AKfycbxicWvVuwVdIlNVrenh0RXQhIdpHLLl4HzMCXqXgrIug5dSPThVsnK21OssqvuZwYD1LA/exec'
-
-    $('#submit-form').on('click', function(e) {
-      e.preventDefault();
-      var jqxhr = $.ajax({
-        url: url,
-        method: "GET",
-        dataType: "json",
-        data: $form.serializeObject()
-      }).success(
-        // do something
-      );
-    })
-
-    </script>
-
-    <h1><strong>Knowledge Hub</strong></h1>
-    <h2>Connect // Create // Collaborate</h2>
-
-    <h3>The first interactive community for interdisciplinary collaboration at the UvA.</h3> <br>
-
-    <p>Over the last year, the Green Office has had countless conversations with students and staff about how to improve sustainability at the university. Throughout these discussions, a clear theme began to emerge; there was a lack of communication and support between different departments, meaning that members of the UvA community didn’t know what was going on in their own university. Following this lead, we conducted in-depth community research about how best to tackle this challenge, and found that the overwhelming majority of participants wanted better university-wide networking with regards to sustainability. You asked, and we delivered! On 22nd April 2021, the UvA Green office is launching the first online community for everyone interested in interdisciplinary sustainability projects -  The Green Office Knowledge Hub! </p> <br>
-    <p>Collaboration is crucial to tackle the crisis of our generation, and the Knowledge Hub strives to facilitate interdisciplinary collaboration in sustainability research. It offers a unique opportunity for all students and staff, regardless of their background, to contribute their insights and skills to solving some of the toughest challenges that come with making our world more sustainable.</p> <br>
-    <p>Do you want to share the insights from your Bachelor or Master thesis on a sustainable topic? Are you looking for research assistants to support a sustainability research project you are planning? Are you looking for an extracurricular activity with a purpose? Or are you simply on the hunt for the latest inspirational findings in the field of sustainability from the UvA? Log on to the Green Office Knowledge hub and connect to the network of sustainability students, researchers, practitioners and enthusiasts at the UvA.</p> <br>
-    <p>The members of the Green Office Knowledge Hub team agree: <strong>”We are really excited to launch the Knowledge Hub and are looking forward to seeing the collaborations that will come as a result of this project!” </strong></p>
-    <p>Connecting to the Knowledge Hub is as easy as can be! You can set up your user profile in less than 8 steps using your email address. Once you are set, there is a feed of the latest blog posts to explore. You can also filter the posts by the Sustainable Development Goals, meaning you can connect based on interest, rather than discipline. Support your favorite projects with a like, leave a comment, or directly get in touch with the creator of a post and expand your network. The Knowledge Hub will also help you to find collaborators on a research project, simply by posting a call for an open position. Not sure of whether your post fits the bill? Just check out the community guidelines for more information!</p>
-    <p>Need a kick-start on how to use the Knowledge Hub? In the run-up to April 22nd, the Green Office YouTube channel will produce a series of short video tutorials to navigate the most important features to help you get started. Stay tuned with the Green Office via our social channels to make sure you don’t miss out on the special Hub promotions!</p>
-    <h3>Get ready to create, connect, collaborate!</h3>
-
-    <p> For more information about the Knowledge Hub, please contact Milly at greenoffice.research-bb@uva.nl.</p>
+          </div>
 
   </div>
+
   </body>
+
 </html>
